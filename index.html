@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создание сайтов на заказ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Основные стили */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f5f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fff;
+      border-bottom: 2px solid #ececec;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #594a42;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #857e79;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #d4c5b2;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #b8a58d;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    main section {
+      margin: 50px auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    main ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    main ul li {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service {
+      background-color: #fff;
+      border: 1px solid #ececec;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .service h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #594a42;
+    }
+
+    .service p {
+      color: #857e79;
+      font-size: 1rem;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #857e79;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #594a42;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-top: 2px solid #ececec;
+      color: #857e79;
+      font-size: 0.9rem;
+    }
+
+    /* Анимация */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Создаю мини-сайты для вашего бизнеса</h1>
+    <p>Стильные, современные и уникальные сайты, которые подойдут именно вам!</p>
+    <button class="contact-btn" onclick="scrollToContacts()">Связаться со мной</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Почему стоит выбрать меня?</h2>
+      <ul>
+        <li>Индивидуальный подход</li>
+        <li>Удобный и стильный дизайн</li>
+        <li>Доступные цены</li>
+      </ul>
+    </section>
+
+    <section class="services">
+      <div class="service fade-in">
+        <h3>Лендинги</h3>
+        <p>Одностраничные сайты для продвижения вашего продукта.</p>
+      </div>
+      <div class="service fade-in">
+        <h3>Блоги</h3>
+        <p>Дизайнерские блоги с удобным интерфейсом.</p>
+      </div>
+      <div class="service fade-in">
+        <h3>Интернет-магазины</h3>
+        <p>Магазины с уникальным дизайном и удобной корзиной.</p>
+      </div>
+    </section>
+
+    <section class="socials" id="contacts">
+      <h2>Свяжитесь со мной:</h2>
+      <a href="https://wa.me/77716178438" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/mikzqwx" target="_blank"><i class="fab fa-instagram"></i></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Miradel. Все права защищены.</p>
+  </footer>
+
+  <script>
+    function scrollToContacts() {
+      document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
